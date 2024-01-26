@@ -1,0 +1,59 @@
+body {
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    margin-top: 15px;
+}
+
+.commits {
+    margin-top: 20px;
+}
+
+.commits p {
+    margin-bottom: 5px;
+}
+
+.toast {
+    visibility: hidden;
+    /* max-width: 200px; */
+    /* Increase the width */
+    height: 50px;
+    line-height: 50px;
+    margin-left: -100px;
+    /* Adjust the margin to center the toast */
+    background-color: #32CD32;
+    /* Change the color to lime green */
+    color: #fff;
+    text-align: center;
+    border-radius: 25px;
+    /* Make the corners round */
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+    padding: 0px 10px;
+    /* Add some padding */
+    transition: visibility 2.5s, opacity 0.5s linear;
+    opacity: 0;
+}
+
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+}
